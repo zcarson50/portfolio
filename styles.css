@@ -41,3 +41,53 @@
     padding: 12px 50px;
   }
 }
+
+/* Hero Section */
+.header-hero {
+  background-color: #0f172a; /* dark background */
+  color: #fff;               /* white text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;       /* top/bottom padding, side padding */
+  text-align: center;
+  min-height: 60vh;           /* make it tall but responsive */
+}
+
+.header-hero .hero-text h1 {
+  font-size: 2.5rem;          /* big headline */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.header-hero .hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;          /* keeps paragraph readable */
+  margin: 0 auto;
+  color: #e2e8f0;            /* slightly softer than pure white */
+}
+
+/* Optional: add subtle fade-in animation */
+.header-hero .hero-text {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-hero {
+    padding: 60px 15px;
+  }
+  .header-hero .hero-text h1 {
+    font-size: 2rem;
+  }
+  .header-hero .hero-text p {
+    font-size: 1rem;
+  }
+}
+
