@@ -1,4 +1,4 @@
-/* CSS */
+/* INDEX.HTML */
 .button-50 {
   appearance: button;
   background-color: #000;
@@ -91,3 +91,46 @@
   }
 }
 
+#projects, 
+#projects * {
+  font-family: Arial, sans-serif !important;
+}
+
+/* CASE STUDIES */
+
+
+
+#tunetalk {
+  font-family: Arial, sans-serif !important;
+}
+
+#tunetalk .overview {
+  margin: 20px auto;
+}
+  
+#tunetalk .content {
+  background-color: #f9f9f9;          /* light gray background */
+  border-radius: 12px;                /* rounded corners */
+  padding: 30px 40px;                 /* space inside the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  max-width: 900px;                   /* keeps content readable */
+  margin: 30px auto;                  /* center container horizontally with spacing from top */
+}
+
+/* Optional: typography inside the card */
+#tunetalk .content h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+#tunetalk .content p,
+#tunetalk .content li {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#tunetalk .content ul {
+  padding-left: 20px;
+}
