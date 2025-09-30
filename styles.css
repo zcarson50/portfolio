@@ -49,9 +49,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 20px;       /* top/bottom padding, side padding */
+  padding: 75px 50px;       /* top/bottom padding, side padding */
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   text-align: center;
   min-height: 60vh;           /* make it tall but responsive */
+  border-radius: 12px;
 }
 
 .header-hero .hero-text h1 {
@@ -94,25 +98,25 @@
 #projects, 
 #projects * {
   font-family: Arial, sans-serif !important;
+  margin-left: 10px;
 }
 
 /* CASE STUDIES */
-
-
 
 #tunetalk {
   font-family: Arial, sans-serif !important;
 }
 
 #tunetalk .overview {
-  margin: 20px auto;
+  text-align: center;
+  padding: 60px; 
 }
   
 #tunetalk .content {
   background-color: #f9f9f9;          /* light gray background */
   border-radius: 12px;                /* rounded corners */
   padding: 30px 40px;                 /* space inside the container */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
   max-width: 900px;                   /* keeps content readable */
   margin: 30px auto;                  /* center container horizontally with spacing from top */
 }
@@ -134,3 +138,36 @@
 #tunetalk .content ul {
   padding-left: 20px;
 }
+
+#snapshots_text {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.snapshots {
+  display: flex;
+  flex-wrap: wrap;          /* allow images to wrap to next row */
+  justify-content: center;  /* center images in each row */
+  gap: 20px;                /* space between images */
+  margin: 40px 0;
+}
+  
+
+.project-image {
+  flex: 0 1 45%;            /* take ~45% of container width */
+  max-width: 500px;         /* optional max size */
+  height: auto;             /* keep aspect ratio */
+  border-radius: 12px;      /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+#tune-talk-style {
+  display: block;            /* allows margin auto to work */
+  margin: 40px auto;         /* centers horizontally, adds top/bottom space */
+  max-width: 70%;            /* keeps it responsive */
+  height: auto;              /* keeps aspect ratio */
+  border-radius: 12px;       /* rounded corners */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* stronger shadow for showcase */
+}
+
