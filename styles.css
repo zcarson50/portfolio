@@ -95,10 +95,24 @@
   }
 }
 
+.card {
+  background-color: #f9f9f9;          /* light gray background */
+  border-radius: 12px;                /* rounded corners */
+  padding: 30px 40px;                 /* space inside the container */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  max-width: 900px;                   /* keeps content readable */
+  margin: 30px auto;                  /* center container horizontally with spacing from top */
+}
+
+
 #projects, 
 #projects * {
   font-family: Arial, sans-serif !important;
   margin-left: 10px;
+}
+
+.card:hover {
+  background-color: rgb(217, 243, 251);
 }
 
 /* CASE STUDIES */
