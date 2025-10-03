@@ -1,4 +1,40 @@
 /* INDEX.HTML */
+
+html, body {
+  height: 100%;      /* ensures body fills viewport */
+  margin: 0;         /* remove default spacing */
+  padding: 0;
+}
+
+.background {
+  position: fixed;          /* stays behind content */
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  z-index: -1;              /* behind everything */
+  pointer-events: none;     /* clicks pass through */
+  background-image: 
+    repeating-linear-gradient(
+      0deg, 
+      transparent, transparent 20px, 
+      rgba(75,85,99,0.08) 20px, rgba(75,85,99,0.08) 21px
+    ),
+    repeating-linear-gradient(
+      90deg, 
+      transparent, transparent 30px, 
+      rgba(107,114,128,0.06) 30px, rgba(107,114,128,0.06) 31px
+    ),
+    repeating-linear-gradient(
+      60deg, 
+      transparent, transparent 40px, 
+      rgba(55,65,81,0.05) 40px, rgba(55,65,81,0.05) 41px
+    ),
+    repeating-linear-gradient(
+      150deg, 
+      transparent, transparent 35px, 
+      rgba(31,41,55,0.04) 35px, rgba(31,41,55,0.04) 36px
+    );
+  background-repeat: repeat;
+}
+
 .button-50 {
   appearance: button;
   background-color: #000;
@@ -41,6 +77,8 @@
     padding: 12px 50px;
   }
 }
+
+
 
 /* Hero Section */
 .header-hero {
