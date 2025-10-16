@@ -172,6 +172,8 @@ html, body {
 
 .card:hover {
   background-color: rgb(217, 243, 251);
+  transform: translateY(-5px);        /* lift image slightly on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* stronger shadow on hover */
 }
 
 /* CASE STUDIES */
@@ -220,18 +222,36 @@ html, body {
 
 .snapshots {
   display: flex;
-  flex-wrap: wrap;          /* allow images to wrap to next row */
-  justify-content: center;  /* center images in each row */
-  gap: 20px;                /* space between images */
+  flex-wrap: wrap;              /* allow images to wrap to next row */
+  justify-content: center;      /* center images in each row */
+  gap: 20px;                    /* space between images */
   margin: 40px 0;
+  padding: 0 10px;              /* small horizontal padding */
 }
-  
+
 .tune-project-image {
-  flex: 0 1 45%;            /* take ~45% of container width */
-  max-width: 500px;         /* optional max size */
-  height: auto;             /* keep aspect ratio */
-  border-radius: 12px;      /* rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  flex: 0 1 45%;                /* take ~45% of container width */
+  max-width: 500px;             /* optional max size */
+  height: auto;                  /* maintain aspect ratio */
+  border-radius: 12px;           /* rounded corners */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* slightly stronger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover effect */
+  background-color: #fafafa;     /* subtle background if images have transparency */
+  padding: 5px;                  /* small inner padding to make shadow look cleaner */
+}
+
+/* Optional hover effect for interactivity */
+.tune-project-image:hover {
+  transform: translateY(-5px);          /* lift slightly on hover */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* stronger shadow on hover */
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 768px) {
+  .tune-project-image {
+    flex: 0 1 90%;             /* full width on small screens */
+    max-width: none;
+  }
 }
 
 #tune-talk-style {
@@ -244,18 +264,55 @@ html, body {
 }
 
 .spacious-project-image {
-  flex: 0 1 45%;            /* take ~45% of container width */
-  max-width: 700px;         /* optional max size */
-  height: auto;             /* keep aspect ratio */
-  border-radius: 12px;      /* rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* subtle shadow */
+   width: 90%;               /* make images almost full width */
+  max-width: 1000px;        /* optional upper limit */
+  height: auto;             /* maintain aspect ratio */
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fafafa;
+  padding: 5px;
+}
+/* Hover effect for interactivity */
+.spacious-project-image:hover {
+  transform: translateY(-5px);        /* lift image slightly on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* stronger shadow on hover */
 }
 
-.vision-project-image {
-  flex: 0 1 45%;            /* take ~45% of container width */
-  max-width: 700px;         /* optional max size */
-  height: auto;             /* keep aspect ratio */
-  border-radius: 12px;      /* rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* subtle shadow */
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .spacious-project-image {
+    flex: 0 1 90%;                     /* almost full width on mobile */
+    max-width: none;
+  }
+}
+
+
+.pdf-container {
+    max-width: 1000px;         /* keeps it from stretching too wide */
+    margin: 40px auto;        /* centers it horizontally */
+    padding: 20px;
+    border: 2px solid #ddd;   /* subtle border */
+    border-radius: 10px;      /* rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* soft shadow */
+    background-color: #fafafa; /* light background for contrast */
+}
+
+
+.pdf-container h2 {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+#article {
+    width: 100%;              /* take full width of container */
+    height: 600px;            /* fixed height for better display */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
 }
 
