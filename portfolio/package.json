@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/zcarson50/portfolio/issues"
   },
-  "homepage": "https://github.com/zcarson50/portfolio#readme",
+  "homepage": "https://github.com/zcarson50/portfolio",
   "devDependencies": {
     "http-server": "^14.1.1"
   }
